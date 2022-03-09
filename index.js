@@ -66,11 +66,11 @@ const myLocalNewsFetch = ()=> {fetch("https://free-news.p.rapidapi.com/v1/search
 	console.error(err);
 });
 };
-//below I have called the function 'myMoreNewsFetch' with a setTimeout function with an argument of 4 seconds. 
+//below I have called the function 'myMoreNewsFetch' with a setTimeout function with an argument of 2.7 seconds. 
 //this is because I am only allowed to make one API call per second with the free news API from 
 //rapidAPI.com. I want to display news data from more than one endpoint, and as a work-around, I need to 
 //separate the API calls by time in order to get the data through. 
-setTimeout(myLocalNewsFetch, 2500);
+setTimeout(myLocalNewsFetch, 2700);
 
 //Note that the fetch API below is hard-coded to retrieve weather data for zip code '11215'.
 //future iterations of this code should allow for a geo-locating API
