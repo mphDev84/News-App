@@ -6,19 +6,19 @@ export const displayBreakingNewsData=(json)=>{
     const newsAuthor = myNewsJSONData.map(article=>article.authors);
     const newsDate = myNewsJSONData.map(article=>article.published_date);
 
-    const displayHeader01= newsHeaders[3];
-    const displaySummary01 = newsSummary[3];
-    const articleAuthor01 = newsAuthor[3];
-    const articleDate01 = newsDate[3];
+    const displayHeader01= newsHeaders[1];
+    const displaySummary01 = newsSummary[1];
+    const articleAuthor01 = newsAuthor[1];
+    const articleDate01 = newsDate[1];
     document.querySelector("#breaking-news-header01").innerHTML= displayHeader01;
     document.querySelector("#breaking-news-summary01").innerHTML= displaySummary01;
     document.querySelector("#breaking-author01").innerHTML= `Article Author: ${articleAuthor01}`;
     document.querySelector("#breaking-date01").innerHTML= `Date published: ${articleDate01}`;
   
-    const displayHeader02= newsHeaders[5];
-    const displaySummary02 = newsSummary[5];
-    const articleAuthor02 = newsAuthor[5];
-    const articleDate02 = newsDate[5];
+    const displayHeader02= newsHeaders[0];
+    const displaySummary02 = newsSummary[0];
+    const articleAuthor02 = newsAuthor[0];
+    const articleDate02 = newsDate[0];
     document.querySelector("#breaking-news-header02").innerHTML= displayHeader02;
     document.querySelector("#breaking-news-summary02").innerHTML= displaySummary02;
     document.querySelector("#breaking-author02").innerHTML= `Article Author: ${articleAuthor02}`;
