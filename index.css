@@ -1,0 +1,182 @@
+:root{
+--main-header-color:#a02b04;
+--main-header-background-color: #EEE5E9;
+--main-breaking-news-header-color:rgb(201, 42, 42);
+--main-more-news-header-color:rgb(201, 42, 42);
+--breaking-news-header-color:rgb(36, 6, 6);
+--main-news-div-background-color:#232C33;
+--breaking-news-div-color:#DADFF7;
+--more-news-div-color:#A0C1D1;
+--local-news-div-color:#B5B2C2;
+--news-summary-background-color:rgb(251, 252, 253);
+--currency-exchange-background-color:#437F97;
+--currency-exchange-header-color:   white;
+--currency-exchange-content-color:#ffd67d;
+}
+#header-div{
+   /** background-color: var(--main-header-background-color); */
+   background: linear-gradient(to top, rgb(156, 156, 252) 50%, rgb(198, 198, 253) 0%);
+    height:200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width:auto;
+    border:#01295F 10px solid;
+}
+#news-header{
+    font-size: 60px;
+    color: var(--main-header-color);
+    letter-spacing: 5px;
+    box-shadow: 0 0 0 10px white;
+    padding:20px 30px 20px 30px;
+}
+#current-tempF,
+#current-tempC{
+    font-size: 18px;
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#weather-header{
+    padding:15px 0px 15px 0px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:aliceblue;
+    text-decoration: underline;
+}
+.weather-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    width:50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:#A0C1D1;
+    font-size: 22px;
+}
+.news-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.main-news-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid rgb(22, 0, 0);
+    background-color: var(--main-news-div-background-color);
+    border-radius: 10px;
+}
+.breaking-news-div{
+    border: 5px solid #993955;
+    width: 600px;
+    background-color: var(--breaking-news-div-color);
+    border-radius: 10px;
+    height:400px;
+    overflow: scroll;
+}
+#breaking-news-header{
+    color:var(--main-breaking-news-header-color);  
+    text-decoration: underline;
+}
+#local-news-header,
+#more-news-header{
+    color:var(--main-more-news-header-color);    
+    text-decoration: underline;
+}
+.more-news-div{
+    border: 5px solid #993955;
+    width:600px;
+    background-color: var(--more-news-div-color);
+    border-radius: 10px;
+    height:400px;
+    overflow: scroll;
+}
+.local-news-div{
+    border: 5px solid #993955;
+    width:600px;
+    background-color: var(--local-news-div-color);
+    border-radius: 10px;
+    height:400px;
+    overflow: scroll;
+}
+#breaking-news-header01,
+#breaking-news-header02,
+#breaking-news-header03,
+#more-news-header01,
+#more-news-header02,
+#more-news-header03, 
+#local-news-header01,
+#local-news-header02,
+#local-news-header03{
+    color:var(--breaking-news-header-color);
+    font-weight: 800;
+    font-size: 17px;
+}
+#breaking-news-summary01,
+#breaking-news-summary02,
+#breaking-news-summary03,
+#more-news-summary01,
+#more-news-summary02,
+#more-news-summary03{
+    padding-top:10px;
+    height:150px;
+    overflow: auto;
+    background-color: var(--news-summary-background-color);
+    border-radius: 10px;
+    border:1px rgb(163, 163, 163) solid;
+}
+.author{
+    color:rgb(3, 28, 109);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.date{
+    font-family: monospace;
+    font-weight: 500;
+}
+#local-news-summary01,
+#local-news-summary02,
+#local-news-summary03{
+    padding-top: 10px;
+    height:150px;
+    overflow: auto;
+    background-color: var(--news-summary-background-color);
+    border-radius: 10px;
+    border:1px rgb(163, 163, 163) solid;
+}
+.local-news-and-currency-wrapper{
+    display: flex;
+    flex-direction: row;
+}
+.currency-exchange-div{
+    padding: 50px 0px 0px 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--currency-exchange-background-color);
+    width: 50%;
+    color:var(--currency-exchange-content-color);
+    align-items: center;
+    border:5px solid #AE76A6;
+    border-radius: 5px;
+}
+#currency-exchange-header{
+    font-family: monospace;
+    font-size: 30px;
+    letter-spacing: 5px;
+    color:var(--currency-exchange-header-color);
+}
+table {
+    text-align: left;
+    font-size: 18px;
+  }
+  th{
+      font-family: Georgia, 'Times New Roman', Times, sans-serif;
+  }
+  tr{
+    border:1px solid black;
+    font-family: Georgia, 'Times New Roman', Times, sans-serif;
+  }
+#exchange-legend{
+    margin-bottom: 30px;
+}
+#table-div{
+    width:60%;
+}
